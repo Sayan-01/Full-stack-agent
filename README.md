@@ -48,10 +48,10 @@ Whether you're building SaaS tools, internal automations, or intelligent assista
 
 ---
 
-## ⚙️ Getting Started
+## Extra tools
 
-### 1. Clone the Repo
+- Inngest -> When we use AI for generate code, we have a risk of timeout / tab close /  connection loss so we can not get the result. 
+  So that we use INNGEST for background jobs. The precess is -> 
 
-```bash
-git clone https://github.com/your-username/bold.git
-cd bold
+  User click 'generate' -> send network request -> Start a background job which run in a separate environment independent of user session -> then it is notify when job is completed
+  In every AI project we should use background jobs.
